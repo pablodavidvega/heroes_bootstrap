@@ -1,0 +1,12 @@
+@mixin category ($fondo){
+    background: $fondo;
+    padding:10px;
+    height: 45px;
+    margin-right:11px;
+    text-align:center;
+}
+@mixin hover ($fondo2) {
+    background:$fondo2;
+    height:55px;
+    color:#fff;
+}
