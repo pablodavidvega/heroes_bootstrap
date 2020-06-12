@@ -7773,7 +7773,33 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-.blues {
-  background-color: #9BC4D0; }
+body {
+  width: 100%; }
+
+#mainNav {
+  height: 51px; }
+
+.container {
+  margin-top: -7px; }
+
+nav div.heart {
+  color: #2AB5DE;
+  background-color: #999;
+  padding: 13px;
+  margin-top: -25px;
+  margin-left: -16px;
+  margin-top: -8px; }
+
+.help-you, .navbar-brand {
+  display: none; }
+
+nav .button {
+  padding-top: 50px; }
+
+.navbar {
+  background-color: #2AB5DE !important; }
+  .navbar .navbar-toggler {
+    padding-left: 16em;
+    background-color: #2AB5DE !important; }
 
 /*# sourceMappingURL=styles2.css.map */
