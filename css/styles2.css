@@ -7814,18 +7814,37 @@ section.page-section {
     font-size: 17px;
     font-weight: bold; }
 
+.download-search {
+  z-index: 1; }
+
 .download-search .buscador {
   display: relative; }
-  .download-search .buscador .download {
-    margin-top: 44px;
-    background-color: #D7DCDB;
-    font-size: 18px;
-    font-weight: bold;
+  .download-search .buscador #header {
     position: absolute;
-    padding: 12px 101px;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 45px; }
+  .download-search .buscador ul {
+    list-style: none;
+    z-index: 2; }
+  .download-search .buscador .nav li a {
+    background-color: #D7DCDB;
+    text-decoration: none;
+    padding: 10px 104px;
+    display: block;
     margin-left: -15px;
+    font-size: 18px;
     color: orange; }
+  .download-search .buscador .nav li a:hover {
+    background-color: #434343; }
+  .download-search .buscador .nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px; }
+  .download-search .buscador .nav li:hover > ul {
+    display: block; }
+  .download-search .buscador .nav li ul li {
+    position: relative;
+    width: 100%; }
   .download-search .buscador p.paragraph {
     position: absolute;
     margin-top: 89px;
@@ -7838,19 +7857,31 @@ section.page-section {
     position: absolute;
     margin-top: 187px; }
 
-.row-right div.col-md-12 {
-  margin-top: 303px;
-  position: relative; }
-.row-right div.play {
-  background-color: #777;
-  border-bottom: blue;
-  text-align: center;
-  color: #fff;
-  padding: 7px;
-  width: 96%;
-  margin: left;
-  margin-left: 3px; }
-.row-right a {
-  color: #fff; }
+.row-right {
+  line-height: 20pt; }
+  .row-right div.col-md-12 {
+    margin-top: 303px;
+    position: relative; }
+  .row-right div.play {
+    background-color: #777;
+    border-bottom: blue;
+    text-align: center;
+    color: #fff;
+    padding: 7px;
+    width: 96%;
+    margin: left;
+    margin-left: 3px; }
+  .row-right a {
+    color: #fff; }
+
+.portfolio-modal {
+  height: 42%; }
+  .portfolio-modal .modal-content {
+    margin-top: -27px; }
+  .portfolio-modal .col-lg-8 {
+    width: 100%; }
+
+.modal-backdrop {
+  display: none; }
 
 /*# sourceMappingURL=styles2.css.map */
