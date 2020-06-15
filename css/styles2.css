@@ -7773,21 +7773,17 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+a.vacation {
+  color: red;
+  background-color: blue; }
+
 #mainNav {
   height: 51px; }
 
 .container {
   margin-top: -7px; }
 
-nav div.heart {
-  color: #2AB5DE;
-  background-color: #999;
-  padding: 13px;
-  margin-top: -25px;
-  margin-left: -16px;
-  margin-top: -8px; }
-
-.help-you, .navbar-brand, .info-free, .culture {
+.navbar-brand, .info-free, .culture {
   display: none; }
 
 nav .button {
@@ -7819,47 +7815,47 @@ section.page-section {
 
 .download-search .buscador {
   display: relative; }
-  .download-search .buscador #header {
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 45px; }
-  .download-search .buscador ul {
-    list-style: none;
-    z-index: 2; }
-  .download-search .buscador .nav li a {
-    background-color: #D7DCDB;
-    text-decoration: none;
-    padding: 10px 104px;
-    display: block;
-    margin-left: -15px;
-    font-size: 18px;
-    color: orange; }
-  .download-search .buscador .nav li a:hover {
-    background-color: #434343; }
-  .download-search .buscador .nav li ul {
-    display: none;
-    position: absolute;
-    min-width: 140px; }
-  .download-search .buscador .nav li:hover > ul {
-    display: block; }
-  .download-search .buscador .nav li ul li {
-    position: relative;
-    width: 100%; }
-  .download-search .buscador p.paragraph {
-    position: absolute;
-    margin-top: 89px;
-    background-color: #777;
-    margin-left: -15px;
-    text-align: center;
-    padding: 18px 152px;
-    color: #fff; }
-  .download-search .buscador .lorem {
-    position: absolute;
-    margin-top: 187px; }
+
+#header {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 45px; }
+
+ul {
+  list-style: none;
+  z-index: 2; }
+
+.nav li a {
+  background-color: #D7DCDB;
+  text-decoration: none;
+  padding: 10px 104px;
+  display: block;
+  margin-left: -15px;
+  font-size: 18px;
+  color: orange; }
+
+.nav li a:hover {
+  background-color: #434343; }
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px; }
+
+.nav li:hover > ul {
+  display: block; }
+
+.nav li ul li {
+  position: relative;
+  width: 100%; }
+
+.lorem {
+  position: absolute;
+  margin-top: 187px; }
 
 .row-right {
   line-height: 20pt; }
-  .row-right div.col-md-12 {
+  .row-right .modal-especial {
     margin-top: 303px;
     position: relative; }
   .row-right div.play {
@@ -7880,6 +7876,17 @@ section.page-section {
     margin-top: -27px; }
   .portfolio-modal .col-lg-8 {
     width: 100%; }
+  .portfolio-modal .modal-down {
+    background-color: orange;
+    color: #fff; }
+    .portfolio-modal .modal-down:hover {
+      color: #a1a1b2; }
+  .portfolio-modal a {
+    text-decoration: none;
+    background-color: orange;
+    color: #fff; }
+    .portfolio-modal a:hover {
+      color: #a1a1b2; }
 
 .modal-backdrop {
   display: none; }
