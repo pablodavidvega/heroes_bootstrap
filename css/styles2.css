@@ -7773,6 +7773,34 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+.cabecera {
+  margin-top: 126px;
+  /*   .help-you{  //vacaciones y reuniones
+         background-color:red;
+     }*/ }
+  .cabecera .colombia {
+    position: absolute;
+    margin-top: -51px; }
+
+.title-flex {
+  margin-bottom: 116px; }
+  .title-flex .title-reality h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: -4px; }
+  .title-flex P.title-magic {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    line-height: 0px; }
+
+.container-4, #search {
+  text-align: center;
+  border-radius: none; }
+  .container-4 a, #search a {
+    background-color: red; }
+
 a.vacation {
   color: red;
   background-color: blue; }
@@ -7780,17 +7808,26 @@ a.vacation {
 #mainNav {
   height: 51px; }
 
+header.masthead {
+  background: #fff !important; }
+
+header .masthead-avatar {
+  margin-top: 150px;
+  width: 20rem !important;
+  height: 13rem; }
+
 .container {
   margin-top: -7px; }
 
-.navbar-brand, .info-free, .culture {
+.navbar-brand, .info-free, .culture, .how-away1, .how-away2, .how-away3, .how-away4, .how-away5 {
   display: none; }
 
 nav .button {
   padding-top: 50px; }
 
 .navbar {
-  background-color: #2AB5DE !important; }
+  background-color: #2AB5DE !important;
+  margin-top: -356px; }
   .navbar .navbar-toggler {
     padding-left: 16em;
     background-color: #2AB5DE !important; }

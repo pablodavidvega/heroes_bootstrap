@@ -1,4 +1,37 @@
 
+.cabecera{    //menu superior
+    margin-top:126px;
+    .colombia {  // vacaciones y reuniones
+        position: absolute;
+        margin-top: -51px;
+    }
+     /*   .help-you{  //vacaciones y reuniones
+            background-color:red;
+        }*/
+}
+
+.title-flex{     //mueve el menu tambien dejando espacio
+    margin-bottom:116px;
+ .title-reality h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: -4px;
+}
+    P.title-magic{
+        font-weight: bold;
+        text-align: center;
+        font-size: 25px;
+        line-height: 0px;
+    }
+}
+    .container-4, #search{
+        text-align:center;
+        border-radius:none;
+        a{
+            background-color:red;
+        }
+    }
 
 a.vacation {
    color:red;
@@ -7,18 +40,29 @@ a.vacation {
 #mainNav{
     height: 51px;
 }
+header.masthead{
+    background:#fff !important;
+}
+header .masthead-avatar{
+    margin-top:150px;
+    width: 20rem !important;
+    height: 13rem;
+}
+
 .container{
     margin-top:-7px;
 }
 
- .navbar-brand, .info-free, .culture   {
+ .navbar-brand, .info-free, .culture, .how-away1, .how-away2, .how-away3, .how-away4, .how-away5 {
     display:none;
 }
 nav .button{
     padding-top:50px;
 }
 .navbar {
-    background-color:#2AB5DE !important;    
+    background-color:#2AB5DE!important; 
+    margin-top: -356px;
+    //position:absolute; posiblemente pero esta en block                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     .navbar-toggler{
         padding-left:16em;
         background-color:#2AB5DE !important;        
