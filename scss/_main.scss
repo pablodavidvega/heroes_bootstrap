@@ -25,49 +25,87 @@
         line-height: 0px;
     }
 }
-    .container-4, #search{
-        text-align:center;
-        border-radius:none;
-        a{
-            background-color:red;
-        }
+.container-4, #search{
+    text-align:center;
+    border-radius:none;
+    a{
+        background-color:red;
     }
-
+}
 a.vacation {
    color:red;
    background-color:blue;
 }
-#mainNav{
-    height: 51px;
-}
-header.masthead{
-    background:#fff !important;
-}
-header .masthead-avatar{
-    margin-top:150px;
-    width: 20rem !important;
-    height: 13rem;
-}
 
-.container{
-    margin-top:-7px;
-}
-
- .navbar-brand, .info-free, .culture, .how-away1, .how-away2, .how-away3, .how-away4, .how-away5 {
-    display:none;
-}
-nav .button{
-    padding-top:50px;
-}
 .navbar {
     background-color:#2AB5DE!important; 
     margin-top: -356px;
     //position:absolute; posiblemente pero esta en block                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-    .navbar-toggler{
-        padding-left:16em;
-        background-color:#2AB5DE !important;        
-    }
+
+#mainNav{
+    height: 51px;
 }
+    .container{
+        margin-top:-7px;
+    }
+    nav .button{
+        padding-top:50px;
+    }
+
+
+        .navbar-toggler{
+            background-color:#2AB5DE !important;  
+        }
+        .collapse a.nav-link{
+                color:#fff !important;
+                background-color:#D7DCDB;
+                border: solid ;
+            }      
+        }
+header.masthead{
+    background:#fff !important;
+}
+ .masthead-avatar{
+    margin-top:150px;
+    width: 20rem !important;
+    height: 13rem;
+}
+ .navbar-brand, .info-free, .culture, .how-away1, .how-away2, .how-away3, .how-away4, .how-away5 {
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 section.page-section {
     padding: 0.1rem 0;
     .container{
@@ -93,45 +131,40 @@ section.page-section {
     display:relative;
    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #header {
     position: absolute;
     font-family:Arial, Helvetica, sans-serif;
-    margin-top: 45px;
-}
-
-ul {
-    list-style:none;
-    z-index:2;
-}
-.nav li a {
+    margin-top: 44px;
     background-color: #D7DCDB;
-    text-decoration: none;
-    padding: 10px 104px;
+    padding: 10px 102px;
     display: block;
     margin-left: -15px;
     font-size: 18px;
-    color: orange;
+    font-weight:bold;
     
-}
-
-.nav li a:hover {
-    background-color:#434343;
-
-}
-
-.nav li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
-}
-
-.nav li:hover > ul {
-    display:block;
-}
-
-.nav li ul li {
-    position:relative;
-    width:100%;
+    &:hover{
+        background-color:#434343;
+    }
+    a{
+        color: orange;
+        text-decoration: none;
+        text-align:center;
+    }
 }
 .lorem{
     position: absolute;
@@ -165,7 +198,7 @@ ul {
         margin-top: -27px;
     }
     .col-lg-8{       
-        width:100%
+        width:100%;
     } 
     .modal-down {
         background-color: orange;
@@ -173,16 +206,18 @@ ul {
         &:hover{
             color:rgb(161, 161, 178);
     }
-}
+    }
     a{
         text-decoration:none;
         background-color: orange;
         color: #fff;
        &:hover{
            color:rgb(161, 161, 178);
-       }
-        }  
+        
     }
+    }
+}
+
 .modal-backdrop{
     display:none;
 }

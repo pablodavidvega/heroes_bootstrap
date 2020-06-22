@@ -7805,32 +7805,32 @@ a.vacation {
   color: red;
   background-color: blue; }
 
-#mainNav {
-  height: 51px; }
+.navbar {
+  background-color: #2AB5DE !important;
+  margin-top: -356px; }
+  .navbar #mainNav {
+    height: 51px; }
+  .navbar .container {
+    margin-top: -7px; }
+  .navbar nav .button {
+    padding-top: 50px; }
+  .navbar .navbar-toggler {
+    background-color: #2AB5DE !important; }
+  .navbar .collapse a.nav-link {
+    color: #fff !important;
+    background-color: #D7DCDB;
+    border: solid; }
 
 header.masthead {
   background: #fff !important; }
 
-header .masthead-avatar {
+.masthead-avatar {
   margin-top: 150px;
   width: 20rem !important;
   height: 13rem; }
 
-.container {
-  margin-top: -7px; }
-
 .navbar-brand, .info-free, .culture, .how-away1, .how-away2, .how-away3, .how-away4, .how-away5 {
   display: none; }
-
-nav .button {
-  padding-top: 50px; }
-
-.navbar {
-  background-color: #2AB5DE !important;
-  margin-top: -356px; }
-  .navbar .navbar-toggler {
-    padding-left: 16em;
-    background-color: #2AB5DE !important; }
 
 section.page-section {
   padding: 0.1rem 0; }
@@ -7856,35 +7856,19 @@ section.page-section {
 #header {
   position: absolute;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 45px; }
-
-ul {
-  list-style: none;
-  z-index: 2; }
-
-.nav li a {
+  margin-top: 44px;
   background-color: #D7DCDB;
-  text-decoration: none;
-  padding: 10px 104px;
+  padding: 10px 102px;
   display: block;
   margin-left: -15px;
   font-size: 18px;
-  color: orange; }
-
-.nav li a:hover {
-  background-color: #434343; }
-
-.nav li ul {
-  display: none;
-  position: absolute;
-  min-width: 140px; }
-
-.nav li:hover > ul {
-  display: block; }
-
-.nav li ul li {
-  position: relative;
-  width: 100%; }
+  font-weight: bold; }
+  #header:hover {
+    background-color: #434343; }
+  #header a {
+    color: orange;
+    text-decoration: none;
+    text-align: center; }
 
 .lorem {
   position: absolute;
