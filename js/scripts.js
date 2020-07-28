@@ -3,7 +3,77 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
     */
-    (function($) {
+ 
+       function capturar(){
+       //  console.log("capturado");
+       function persona(buscador){
+       this.buscador=buscador;
+       }
+       var nombrecapturar = document.getElementById("search").value;
+       console.log(nombrecapturar);
+      }
+
+
+
+      var end = new Date('12/17/2100 9:30 AM');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        document.getElementById('countdown').innerHTML = days + ' dias, ';
+        document.getElementById('countdown').innerHTML += hours + ' horas, ';
+        document.getElementById('countdown').innerHTML += minutes + ' minutos y ';
+        document.getElementById('countdown').innerHTML += seconds + ' segundos';
+    }
+
+    timer = setInterval(showRemaining, 1000);
+
+
+    function mueveReloj(){
+      momentoActual = new Date()
+      hora = momentoActual.getHours()
+      minuto = momentoActual.getMinutes()
+      segundo = momentoActual.getSeconds()
+  
+      horaImprimible = hora + " : " + minuto + " : " + segundo
+  
+      document.form_reloj.reloj.value = horaImprimible
+  
+      setTimeout("mueveReloj()",1000)
+  }
+ /* var razas= new Array("doberman", "buldog");
+  console.log(razas.length);
+
+
+  hoy = new Date();
+  console.log(hoy)
+  mañana=new Date('Jul 08 2020 21:28:39 GMT-0500') 
+ console.log(mañana) 
+
+  cuentaregresiva=new Date('Jul 08 2020 21:28:39 GMT-0500'- 'hoy')
+ console.log(cuentaregresiva)
+//new Date('Jul 08 2020 21:18:34 GMT-0500') - new Date()
+//console.log(new Date)
+
+   /* (function($) {
     "use strict"; // Start of use strict
   
     // Smooth scrolling using jQuery easing
@@ -65,5 +135,5 @@
       });
     });
   
-  })(jQuery); // End of use strict
+  })(jQuery); // End of use strict*/
   

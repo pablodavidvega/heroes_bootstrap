@@ -12,6 +12,8 @@
       <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+      <script  src="js/scripts.js"></script>
+      
       <!-- Google fonts-->
       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -19,7 +21,7 @@
       <link href="css/styles.css" rel="stylesheet" />
       <link href="css/styles2.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
+    <body  onload="mueveReloj()" id="page-top">
         <div class="cabecera">
             <div class="colombia">
                 <div class="help-you">
@@ -45,16 +47,31 @@
                     </div>
                 </div>
             </div>
-            <div class="title-flex">
-                <div class="title-reality">
-                    <h1>COLOMBIA</h1>
-                    <p class="title-magic">ES REALISMO MAGICO</p>
-                </div>
-                <div class="container-4">
-                    <input type="search" id="search" placeholder="Encuentra tu destino" />
-                    <a href="#" class="icon"><i class="fa fa-search"></i></a>
+            <div class="place">
+                <div class="title-flex">
+                    <div class="title-reality">
+                        <h1>COLOMBIA</h1>
+                        <p class="title-magic">ES REALISMO MAGICO</p>
+                    </div>
+                    <div class=" container-4">
+                        <input type="search" id="search" placeholder="Encuentra tu destino"> </input>
+                        <a href="#" id="boton" class="icon"> <i class="fa fa-search" onclick="capturar();"></i></a>
+                    </div>
                 </div>
             </div>
+            <div class="clock">
+                <form name="form_reloj">
+                    <input class="back-color" type="text" name="reloj" size="10">
+                </form>
+            </div>
+            <div class="next-event">
+                <P>
+                    PROXIMO EVENTO EN 24 HORAS
+                </P>
+
+            </div>
+            <div id="countdown"></div>
+          
         </div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase " id="mainNav">
@@ -78,24 +95,26 @@
                 <div class="image-pro">
                     <!-- image-acdc--><img class="masthead-avatar mb-5" src="assets/img/imagen-principal.webp" alt="" /><!-- Masthead Heading-->
                 </div>
-                <form>
-                    <select name="manager">
-                        <option value="1" selected>Gerencie</option>
-                        <option value="2">Capacite</option>
-                        <option value="3">Organicese</option>
-                    </select>
-                    <select name="option">
-                        <option value="1" selected>option</option>
-                        <option value="2">1</option>
-                        <option value="3">2</option>
-                    </select>
-                    <select name="year">
-                        <option value="1" selected>2016</option>
-                        <option value="2">2017</option>
-                        <option value="3">2018</option>
-                    </select>
-                  
-                </form>   
+                <div class="gerencie">
+                    <form>
+                        <select name="manager">
+                            <option value="1" selected>Gerencie</option>
+                            <option value="2">Capacite</option>
+                            <option value="3">Organicese</option>
+                        </select>
+                        <select name="option">
+                            <option value="1" selected>option</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                        </select>
+                        <select name="year">
+                            <option value="1" selected>2016</option>
+                            <option value="2">2017</option>
+                            <option value="3">2018</option>
+                        </select>
+                    
+                    </form> 
+                </div>  
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -206,7 +225,7 @@
                     </div>
                     <!-- Portfolio Item 4-->
                     <div class="col-md-12 col-lg-4 mb-5 mb-lg-0">
-                        <div>
+                        <div class="brochure">
                             <h5>BROCHURE</h5>
                         </div>
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
@@ -258,9 +277,10 @@
                            </div>
                         </div>
                     </div>
+                    <br>
                     <!-- Portfolio Item 7-->
                     <div class="col-md-12 col-lg-4 mb-5">
-                        <div>
+                        <div class="brochure">
                             <h5>UBICACION</h5>
                         </div>
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
@@ -314,7 +334,7 @@
                     </div>
                     <!-- Portfolio Item 10-->
                     <div class="col-md-12 col-lg-4 mb-5 mb-lg-0">
-                        <div>
+                        <div class="brochure">
                             <h5>IMAGENES</h5>
                         </div>
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal10">
@@ -371,64 +391,53 @@
         </section>     
         <!-- Footer-->
         <footer class="footer">
-            <div class="where-to-go">
-                <ul>
-                    <li>
-                        <h6 class="text-uppercase mb-4">ADONDE IR</h6>
-                        <a href="#">ANDINA</a>
-                        <a href="#">ORINOQUIA</a>
-                        <a href="#">AMAZONIA</a>
-                        <a href="#">CARIBE</a>
-                        <a href="#">PACIFICA</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h6 class="text-uppercase mb-4">QUE HACER</h6>
-                        <a href="#">BIENESTAR</a>
-                        <a href="#">CULTURA</a>
-                        <a href="#">NATURALEZA</a>
-                        <a href="#">AVENTURA</a>
-                        <a href="#">NAUTICO</a>
-                        <a href="#">NAUTICO</a>
-                        <a href="#">SOL/PLAYA</a>
-                        <h6 class="text-uppercase mb-4">FERIAS Y FIESTAS</h6>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h6 class="text-uppercase mb-4">INFORMACION PRACTICA</h6>
-                        <a href="#">CLIMA</a>
-                        <a href="#">CULTURA</a>
-                        <a href="#">LINEAS DE ATENCION</a>
-                        <a href="#">SALUD Y VACUNAS</a>
-                        <a href="#">EMBAJADAS</a>
-                        <a href="#">CONVERTIDOR DE MONEDAS</a>
-                        <a href="#">VISAS</a>
-                        <a href="#">MEDIDAS Y ELECTRICIDAD</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h6 class="text-uppercase mb-4">SITIOS RELACIONADOS</h6>
-                        <a href="#">PROCOLOMBIA</a>
-                        <a href="#">FONTUR</a>
-                        <a href="#">EXPORTACIONES</a>
-                        <a href="#">INVERSIONES</a>
-                        <a href="#">MINISTERIO DE COMERCIO, INDUSTRIA Y TURISMO DE COLOMBIA</a>
-                        <a href="#">SIGUENOS EN:</a>
-                    </li>
-                </ul>
+            <div class="last-menu">
+                <div class="information">
+                    <select name="select">
+                        <option value="value2"> ANDINA</option>
+                        <option value="value1"selected>A DONDE IR</option> 
+                        <option value="value3">ORINOQUIA</option>
+                        <option value="value4">AMAZONIA</option>
+                        <option value="value5">CARIBE</option>
+                        <option value="value6">PACIFCA</option>
+                    </select> 
+                </div>
+                <br>
+                <div class="information">
+                    <select name="select">
+                        <option value="value2" selected> QUE HACER</option>
+                        <option value="value1">BUENESTAR</option> 
+                        <option value="value3">CULTURA</option>
+                        <option value="value4">NATURALEZA</option>
+                        <option value="value5">AVENTURA</option>
+                        <option value="value6">NATICO</option>
+                    </select>
+                </div>
+                <br>
+                <div class="information">
+                    <select name="select">
+                        <option value="value2" selected> INFORMACION PRACTICA</option>
+                        <option value="value1">CLIMA</option> 
+                        <option value="value3">CULTURA</option>
+                        <option value="value4">LINEAS DE ATENCION</option>
+                        <option value="value5">SALUD Y VACUNAS</option>
+                        <option value="value6">EMBAJADAS</option>
+                    </select>
+                </div>
+                <br>
+                <div class="information">
+                    <select name="select">
+                        <option value="value2" selected> SIGUENOS EN</option>
+                        <option value="value1">PROCOLOMBIA</option> 
+                        <option value="value3">FONTUR</option>
+                        <option value="value3">EXPORTACIONES INVERSIONES</option>
+                        <option value="value3">MINISTERIO DE COMERCIO, INDUSTRIA Y TURISMO</option>
+                        <option value="value3">SITIOS RELACIONADOS:</option>
+                    </select>
+                </div>
             </div>
             <!-- Footer Social Icons--> 
-            <div class="col-lg-3 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">que paso aqui</h4>
+            <div class="iconos col-lg-3 mb-5 mb-lg-0">
                 <a class="btn btn-outline-light btn-social mx-1" href="#!">
                     <i class="fab fa-fw fa-facebook-f"></i>
                 </a>
